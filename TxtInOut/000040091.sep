@@ -1,0 +1,29 @@
+.sep file Watershed HRU:438 Subbasin:4 HRU:91 Luse:UPWN Soil:377988 Slope:0-2 11/30/2022 2:00:48 PM EPA-HAWQS HUC8 v2.0 (07010104)
+
+1                   | ISEP_TYP : The type of septic system
+0                   | ISEP_IYR : Year the septic system became operational
+0                   | ISEP_OPT : Initial septic HRU operational condition
+0.000               | SEP_CAP : Number of permanent residents in the house
+100.000             | BZ_AREA : Surface area of drainfield (m2)
+0                   | ISEP_TFAIL : Time until failing systems gets fixed (days)
+500.000             | BZ_Z : Depth to the top of biozone layer (mm)
+50.000              | BZ_THK : Thickness of biozone layer (mm)
+0.000               | SEP_STRM_DIST : Distance to the stream from the septic HRU (km)
+0.000               | SEP_DEN : Number of septic systems per square kilometer
+1000.000            | BIO_BD : Density of biomass (kg/m3)
+108.000             | COEFF_BOD_DC : BOD decay rate coefficient (cm3/s)
+0.420               | COEFF_BOD_CONV : Ratio of BOD converted to biomass
+30.000              | COEFF_FC1 : Coefficient 1 for field capacity
+0.700               | COEFF_FC2 : Coefficient 2 for field capacity
+15.000              | COEFF_FECAL : Fecal coliform bacteria decay rate coefficient (cm3/s)
+0.100               | COEFF_PLQ : Plaque calibration parameter
+0.290               | COEFF_MRT : Mortality rate coefficient (cm3/s)
+0.180               | COEFF_RSP : Respiration rate coefficient (cm3/s)
+0.00000             | COEFF_SLG1 : Slough-off coefficient 1 (cm3/s)
+1.200               | COEFF_SLG2 : Slough-off coefficient 2 (cm3/s)
+1.000               | COEFF_NITR : Nitrification rate coefficient (cm3/s)
+0.050               | COEFF_DENITR : Denitrification rate coefficient (cm3/s)
+0.000               | COEFF_PDISTRB : Linear P sorption distribution coefficient (L/kg)
+0.000               | COEFF_PSORPMAX : Maximum P sorption capacity (mg P/kg Soil)
+0.000               | COEFF_SOLPSLP : Slope of the linear effluent soluble P equation
+0.000               | COEFF_SOLPINTC : Intercept of the linear effluent soluble P equation

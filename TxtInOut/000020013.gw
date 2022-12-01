@@ -1,0 +1,17 @@
+.gw file Watershed HRU:148 Subbasin:2 HRU:13 Luse:FRSD Soil:1857343 Slope:0-2 11/30/2022 2:00:27 PM EPA-HAWQS HUC8 v2.0 (07010102)
+1000.0000           | SHALLST : Initial depth of water in the shallow aquifer [mm]
+1000.0000           | DEEPST : Initial depth of water in the deep aquifer [mm]
+58.3900             | GW_DELAY : Groundwater delay [days]
+0.7121              | ALPHA_BF : BAseflow alpha factor [days]
+1607.0000           | GWQMN : Threshold depth of water in the shallow aquifer required for return flow to occur [mm]
+0.1748              | GW_REVAP : Groundwater "revap" coefficient
+492.5000            | REVAPMN: Threshold depth of water in the shallow aquifer for "revap" to occur [mm]
+0.0524              | RCHRG_DP : Deep aquifer percolation fraction
+1.0000              | GWHT : Initial groundwater height [m]
+0.0030              | GW_SPYLD : Specific yield of the shallow aquifer [m3/m3]
+0.0000              | SHALLST_N : Initial concentration of nitrate in shallow aquifer [mg N/l]
+0.0000              | GWSOLP : Concentration of soluble phosphorus in groundwater contribution to streamflow from subbasin [mg P/l]
+0.0000              | HLIFE_NGW : Half-life of nitrate in the shallow aquifer [days]
+0.0000              | LAT_ORGN : Organic N in the base flow [mg/L]
+0.0000              | LAT_ORGP : Organic P in the base flow [mg/L]
+0.0000              | ALPHA_BF_D : Alpha factor for groundwater recession curve of the deep aquifer [l/days]
