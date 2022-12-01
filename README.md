@@ -1,4 +1,4 @@
-# Soild and Water Assessement Tool
+# Soil and Water Assessement Tool
 A test of running the Soil and Water Assessment Tool in a linux environment.
 
 # Requirements
