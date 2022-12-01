@@ -18,5 +18,9 @@ lapply(list.of.packages, library, character.only = TRUE)
 #################### parts
 ##########################
 
+## navigate to directory with executable 
+getwd()
+setwd(paste0(getwd(), '/TxtInOut'))
+
 ## run swat
-system('inputs/swat670')
+system('swat670.exe')
