@@ -22,5 +22,14 @@ lapply(list.of.packages, library, character.only = TRUE)
 getwd()
 setwd(paste0(getwd(), '/TxtInOut'))
 
+## set path
+project_path = getwd()
+
+## function from swat
+'%&&%' <- function(a, b) paste(a, b, sep = " ")
+
 ## run swat
-system('swat670.exe')
+# system('swat670.exe')
+swat_exe = system("find"%&&%project_path%&&%"-executable -type f",
+       intern = T) %>%
+  basename(.)
