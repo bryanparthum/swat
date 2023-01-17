@@ -19,21 +19,18 @@ lapply(list.of.packages, library, character.only = TRUE)
 ##########################
 
 ## navigate to directory with executable 
-getwd()
 setwd(paste0(getwd(), '/TxtInOut'))
 
-## set path
+## get path
 project_path = getwd()
 
 ## function from swat
 '%&&%' <- function(a, b) paste(a, b, sep = " ")
 
-## run swat
-# system('swat670.exe')
-swat_exe = system("find"%&&%project_path%&&%"-executable -type f",
+## find swat executable
+swat_exe = 
+  system("find"%&&%project_path%&&%"-executable -type f",
        intern = T)
 
-# system("find"%&&%project_path%&&%"-executable -type f",
-#        intern = T)
-
-# system('/home/bparthum/shared/ncee/surface_water/swat/TxtInOut/swat670.exe)
+## run swat
+system(swat_exe)
