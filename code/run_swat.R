@@ -31,5 +31,9 @@ project_path = getwd()
 ## run swat
 # system('swat670.exe')
 swat_exe = system("find"%&&%project_path%&&%"-executable -type f",
-       intern = T) %>%
-  basename(.)
+       intern = T)
+
+# system("find"%&&%project_path%&&%"-executable -type f",
+#        intern = T)
+
+# system('/home/bparthum/shared/ncee/surface_water/swat/TxtInOut/swat670.exe)
