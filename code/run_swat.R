@@ -65,4 +65,11 @@ exe <- run_os(swat_exe, os)
 
 ## run swat
 system(exe)
+system(swat_exe)
 
+## run swat from the command line, answer here: https://superuser.com/questions/216629/can-i-run-a-windows-exe-file-on-linux
+## in the terminal, navigate to the location of the executable
+## then give the user permission to run the executable by typing (excluding the first "#")
+# chmod a+x swat670.exe
+## then run the executable (excluding the first "#")
+# ./swat670.exe
