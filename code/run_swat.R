@@ -24,15 +24,47 @@ setwd(paste0(getwd(), '/TxtInOut'))
 ## get path
 project_path = getwd()
 
-## function from swat
+## function from SWATplusR
 '%&&%' <- function(a, b) paste(a, b, sep = " ")
+'%//%' <- function(a, b) paste(a, b, sep = "/")
+
+
+## function from SWATplusR to get os
+get_os <- function() {
+  if (.Platform$OS.type == "windows") {
+    "win"
+  } else if (Sys.info()["sysname"] == "Darwin") {
+    #"mac"
+    stop("SWATplusR only supported for Windows and Linux")
+  } else if (.Platform$OS.type == "unix") {
+    "unix"
+  } else {
+    stop("Unknown OS")
+  }
+}
+
+os <- get_os()
 
 ## find swat executable
-swat_exe = 
-  system("find"%&&%project_path%&&%"-executable -type f",
-       intern = T)
+if(os == "win") {
+  swat_exe <- list.files(project_path) %>%
+    .[grepl(".exe$",.)]
+  
+} else if(os == "unix") {
+  swat_exe <- system("find"%&&%project_path%&&%"-executable -type f",
+                     intern = T) %>%
+    basename(.)
+}
+
+run_os <- function(exe, os) {
+  if(os == 'unix') exe <- '.'%//%exe
+  return(exe)
+}
+
+exe <- run_os(swat_exe, os)
 
 ## run swat
+system(exe)
 system(swat_exe)
 
 ## run swat from the command line, answer here: https://superuser.com/questions/216629/can-i-run-a-windows-exe-file-on-linux
@@ -41,4 +73,3 @@ system(swat_exe)
 # chmod a+x swat670.exe
 ## then run the executable (excluding the first "#")
 # ./swat670.exe
-
